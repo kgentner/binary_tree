@@ -6,6 +6,7 @@ var countNodes = require('../lib/countNodes');
 var countEdges = require('../lib/countEdges');
 var getMin = require('../lib/getMin');
 var getMax = require('../lib/getMax');
+var wordOccurrence = require('../lib/wordOccurrence');
 
 
 describe('Binary Search Tree', function() {
@@ -33,5 +34,11 @@ describe('Binary Search Tree', function() {
   it('should get the minimum value in a binary search tree', function() {
     expect(getMin(nums.root)).to.eql(3);
   });
+});
 
+describe('The Occurence of Words', function() {
+  var str = 'The duke duke duke duke of earl';
+  it('should get the occurrences of each word', function() {
+    expect(wordOccurrence(str)).to.eql({ The: 1, duke: 4, of: 1, earl: 1});
+  });
 });
