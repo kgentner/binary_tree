@@ -8,7 +8,6 @@ var getMin = require('../lib/getMin');
 var getMax = require('../lib/getMax');
 var wordOccurrence = require('../lib/wordOccurrence');
 
-
 describe('Binary Search Tree', function() {
   var nums = new BST();
   nums.insert(23);
